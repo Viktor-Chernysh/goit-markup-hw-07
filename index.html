@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
   <!-- Хэдэр -->
@@ -17,11 +17,11 @@
       <!-- Логотип  -->      
       <nav class="navigation">
         <a href="./index.html" class="logo header__logo" aria-label="логотип webstudio">
-          <span class="logo__style">Web</span>Studio
+          <span class="logo__accent">Web</span>Studio
         </a>
         <ul class="list menu">
         <li class="menu__item">
-          <a href="" class="link menu__link menu__link--accent-color">Студия</a>
+          <a href="" class="link menu__link menu__link--active">Студия</a>
         </li>
         <li class="menu__item">
           <a href="./portfolio.html" class="link menu__link">Портфолио</a>
@@ -113,7 +113,7 @@
             <div class="team__body">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__content">Product Designer</p>
-              <ul class="social-icons list">
+              <ul class="social-icons menu list">
                 <li class="social-icons__item">
                   <a href="" class="link social-icons__link" target="_blank" rel="noopener noreferrer"
                     aria-label="ссылка на инстаграм">
@@ -151,7 +151,7 @@
             <div class="team__body">
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__content">Frontend Developer</p>
-              <ul class="social-icons list">
+              <ul class="social-icons menu list">
                 <li class="social-icons__item">
                   <a href="" class="link social-icons__link" target="_blank" rel="noopener noreferrer"
                     aria-label="ссылка на инстаграм">
@@ -189,7 +189,7 @@
             <div class="team__body">
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__content">Marketing</p>
-              <ul class="social-icons list">
+              <ul class="social-icons menu list">
                 <li class="social-icons__item">
                   <a href="" class="link social-icons__link" target="_blank" rel="noopener noreferrer"
                     aria-label="ссылка на инстаграм">
@@ -227,7 +227,7 @@
             <div class="team__body">
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__content">UI Designer</p>
-              <ul class="social-icons list">
+              <ul class="social-icons menu list">
                 <li class="social-icons__item">
                   <a href="" class="link social-icons__link" target="_blank" rel="noopener noreferrer"
                     aria-label="ссылка на инстаграм">
@@ -323,18 +323,18 @@
         <div class="content-box">
           <!-- Логотип футера-->
           <a href="./index.html" class="logo footer__logo">
-            <span class="logo__style">Web</span>Studio
+            <span class="logo__accent">Web</span>Studio
           </a>
           <address class="address" id="address">
             <ul class="list contact-list">
-              <li class="contact-list__item">
-                <a href="https://goo.gl/maps/BqRFoX4zjeefGf4j7" class="contact-list__link" target="_blank" rel="noopener noreferrer">г. Киев,
+              <li class="address__item">
+                <a href="https://goo.gl/maps/BqRFoX4zjeefGf4j7" class="address__link" target="_blank" rel="noopener noreferrer">г. Киев,
                   пр-т Леси Украинки, 26</a>
                 </li>
-              <li class="contact-list__item">
+              <li class="address__item">
                 <a href="mailto:info@example.com" class="link">info@example.com</a>
               </li>
-              <li class="contact-list__item">
+              <li class="address__item">
                 <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
               </li>
             </ul>
@@ -342,7 +342,7 @@
         </div>
         <div class="content-box">
           <h2 class="footer__title">присоединяйтесь</h2>
-          <ul class="social-icons list" >
+          <ul class="social-icons menu list" >
             <li class="social-icons__item ">
               <a href="" class="link social-icons__link" target="_blank" rel="noopener noreferrer"
                 aria-label="ссылка на инстаграм">
@@ -376,6 +376,7 @@
         </div>
         </div>
         <div class="content-box">
+          <!-- Форма -->
           <form class="footer-form">
             <b class="footer__title">Подпишитесь на рассылку</b>
             <input type="email" class="footer-form__form-field" placeholder="E-mail">
@@ -393,7 +394,7 @@
   <!-- Backdrop -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal__btn-close" data-modal-close>
+      <button class="modal__btn-close btn-close" data-modal-close>
         <svg class="btn-close__icon" width="20" height="">
           <use href="./images/icons/sprite1.svg#icon-close-btn"></use>
         </svg>
@@ -433,7 +434,7 @@
           </label>
        
           
-        <div class="form__agreement-wrap">
+        
           <label class="form__agreement ">
             <span class="form__agreement-text">
               <input type="checkbox" class="form__checkbox" name="agreement" value="agree">          
@@ -444,7 +445,7 @@
             </span>
           </label>
           <a href="" class="form__agreement-link">Условия договора</a>
-        </div>             
+                   
 
         <button type="submit" class="button form__button">Отправить</button>
         

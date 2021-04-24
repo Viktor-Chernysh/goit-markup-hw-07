@@ -1,0 +1,6 @@
+.menu {
+  display: inline-flex;
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
