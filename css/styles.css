@@ -979,6 +979,10 @@ img {
   margin-bottom: 0;
 }
 
+.portfolio__name {
+  margin-bottom: 0;
+}
+
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
