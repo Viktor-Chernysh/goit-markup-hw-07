@@ -33,7 +33,8 @@ img {
   color: inherit;
   transition: color var(--animation);
 }
-.link:hover {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 
