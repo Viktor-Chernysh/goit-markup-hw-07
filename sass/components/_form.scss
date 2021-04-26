@@ -9,15 +9,19 @@
   color: var(--secondary-text-color);
 }
 
+.form-field__wrap {
+  position: relative;
+}
+.form-field__title {
+  display: block;
+  margin-bottom: 4px;
+}
 .form__input {
   width: 100%;
   padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border var(--animation);
-}
-.form-field__wrap {
-  position: relative;
 }
 .form-input__icon {
   position: absolute;
@@ -34,10 +38,7 @@
 .form__input:focus + .form-input__icon {
   fill: var(--accent-color);
 }
-.form-field__title {
-  display: block;
-  margin-bottom: 4px;
-}
+
 .form__textarea {
   display: block;
   width: 100%;

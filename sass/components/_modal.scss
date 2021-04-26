@@ -32,9 +32,7 @@
   opacity: 0.7;
 }
 .btn-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex;
   width: 30px;
   height: 30px;
   border-radius: 50%;

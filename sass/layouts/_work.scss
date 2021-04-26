@@ -5,10 +5,7 @@
   position: relative;
 }
 .work__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  @include centeredFlex;
   position: absolute;
   bottom: 0;
 

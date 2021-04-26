@@ -4,5 +4,5 @@
   align-items: baseline;
 }
 .content-box {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 30px) / var(--block-quntity));
 }
